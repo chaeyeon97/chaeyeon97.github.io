@@ -1,20 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-    <title>홈페이지</title>
-    <script src="./main.js"></script>
-    <style>
-    	img{
-    		width:640px;
-    		border-top:4px solid #666666;
-    		border-right:4px dashed #666666;
-    		border-bottom:4px dotted #666666;
-    		border-left:4px double #666666;
-    	}
-    </style>
+<meta charset="UTF-8">
+<title>홈페이지</title>
+<script src="./main.js"></script>
+<style>
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.container {
+	width: 890px;
+	margin: 0px auto 0px auto;
+	background-color: #dbdbdb;
+	text-align: center;
+}
+	#myphoto, #myinfo{
+		background-color:#ff66ff;
+		border:2px solid #333333;
+	}
+		#myphoto > img {
+			width: 640px;
+			border-top: 4px solid #666666;
+			border-right: 4px dashed #666666;
+			border-bottom: 4px dotted #666666;
+			border-left: 4px double #666666;
+			margin:30px;
+		}
+</style>
 </head>
 <body>
-<img  src="./images/aaaa.jpg" alt="스티치" title="스티치">
+	<div class="container">
+		<div id="myphoto">
+			<img src="./images/aaaa.jpg" alt="스티치" title="스티치">
+		</div>
+		<div id="myinfo"></div>
+	</div>
 </body>
 </html>
