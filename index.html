@@ -28,6 +28,27 @@
 			border-left: 4px double #666666;
 			margin:30px;
 		}
+		#myinfo {
+			text-align:left;
+		}
+			#myinfo > ol{
+				margin:30px 0px 30px 130px;
+				list-style:square;
+			}
+				#myinfo >ol{
+					padding:5px;
+					font-size:1.4em;
+				}
+				#myinfo > ol > li> span.label{
+					text-decoration: underline;
+					color:#ff0000;
+					font-family: "돋움체";
+				}
+				#myinfo > ol > li> span.content{
+					font-weight:bold;
+					color:#00ff00;
+					font-family: "궁서체";
+				}
 </style>
 </head>
 <body>
@@ -35,7 +56,26 @@
 		<div id="myphoto">
 			<img src="./images/aaaa.jpg" alt="스티치" title="스티치">
 		</div>
-		<div id="myinfo"></div>
+		<div id="myinfo">
+			<ol>
+				<li>
+					<sapn class="label">이&nbsp;&nbsp;&nbsp;&nbsp;름</sapn>
+					<span class="content">김채연</span>
+				</li>
+				<li>
+					<sapn class="label">이&nbsp;메&nbsp;일</sapn>
+					<span class="content">chaeyeon97@e-mirim.hs.kr</span>			
+					</li>
+				<li>
+					<sapn class="label">취&nbsp;&nbsp;&nbsp;&nbsp;미</sapn>
+					<span class="content">웹서핑</span>
+				</li>
+				<li>
+					<sapn class="label">선호하는 언어</sapn>
+					<span class="content">JAVA</span>
+				</li>
+				</ol>
+		</div>
 	</div>
 </body>
 </html>
